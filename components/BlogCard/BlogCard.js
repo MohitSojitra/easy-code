@@ -2,7 +2,7 @@ import {get150Char} from '../../utils/utility.func'
 
 export default function BlogCard({blog}) {
   return (
-    <div className="bg-white shadow-sm hover:shadow-lg transition duration-500 px-6 pt-4 rounded-lg ">
+    <div className="bg-white shadow-sm hover:shadow-2xl transition duration-500 px-6 pt-4  rounded-lg ">
       <img
         className="w-full h-56 rounded-md border-none"
         src={`/blog/${blog.slug}/${blog.blogImage}`}
