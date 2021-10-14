@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import {data} from '../lib/data'
 
 export default function Home() {
   return (
@@ -11,6 +12,19 @@ export default function Home() {
       </Head>
       <main>
         <h1>My Blogs</h1>
+
+        <div>
+          {data.map(blog => {
+            return (
+              <div key={blog.slug}>
+                <div>{blog.slug}</div>
+                <div>{blog.title}</div>
+                <div>{blog.author}</div>
+                <br />
+              </div>
+            )
+          })}
+        </div>
       </main>
     </div>
   )
