@@ -1,12 +1,11 @@
-import Header from '../Component/Header/Header'
 import '../styles/globals.css'
+import {ThemeProvider} from 'next-themes'
 
 function MyApp({Component, pageProps}) {
   return (
-    <div>
-      <Header />
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </div>
+    </ThemeProvider>
   )
 }
 

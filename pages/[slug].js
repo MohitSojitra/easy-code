@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Wrapper from '../components/Header/Wrapper'
 import {data} from '../lib/data'
 
 export default function Blog({blog}) {
   return (
-    <div>
+    <Wrapper>
       <main>
         {Object.keys(blog).map(k => {
           return (
@@ -17,7 +18,7 @@ export default function Blog({blog}) {
           )
         })}
       </main>
-    </div>
+    </Wrapper>
   )
 }
 
