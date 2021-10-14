@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
       <div className="flex">
         <a
-          className="flex items-center mx-2 lg:mx-4 text-gray-800 dark:text-gray-100 transition-all duration-500"
+          className="flex items-center mx-2 lg:mx-4 text-gray-800 dark:text-gray-100   hover:text-yellow-500 dark:hover:text-yellow-400"
           href="https://github.com/soumyajit4419"
           rel="noopener noreferrer"
           target="_blank"
@@ -21,7 +21,7 @@ export default function Footer() {
             <FaGithub className="text-lg" />
           </span>
         </a>
-        <button className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 dark:text-gray-100 transition-all duration-500">
+        <button className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 dark:text-gray-100 hover:text-yellow-500  dark:hover:text-yellow-400">
           <span className="text-lg">
             <FaLinkedinIn className="text-xl" />
           </span>

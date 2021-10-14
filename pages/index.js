@@ -16,8 +16,8 @@ export default function Home({blogs}) {
       </Head>
       <main className="w-full flex flex-col items-center flex-1">
         <Banner />
-        <div className="w-5/6 my-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-4 ">
+        <div className="w-5/6 my-4 ">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-4 justify-items-center">
             {blogs.map(blog => (
               <BlogCard blog={blog} key={blog.slug} />
             ))}
