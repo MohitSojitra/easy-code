@@ -27,7 +27,7 @@ function Header() {
   }
   return (
     <>
-      <header className=" w-full border-t-4 bg-gray-100 dark:bg-gray-900 border-yellow-500 dark:border-yellow-400 shadow dark:shadow-2 z-50">
+      <header className="fixed w-full border-t-4 bg-gray-100 dark:bg-gray-900 border-yellow-500 dark:border-yellow-400 shadow dark:shadow-2 z-50 transition-all duration-500">
         <div className="container mx-auto px-6 py-6">
           <div className="flex items-center justify-between">
             <div>
