@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Banner from '../components/Banner'
 import BlogCard from '../components/BlogCard/BlogCard'
 import Wrapper from '../components/Wrapper'
-import {data} from '../lib/data'
+import {getPostSlugs} from '../lib/data'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
 export default function Home({blogs}) {
@@ -37,11 +37,15 @@ export default function Home({blogs}) {
 }
 
 export async function getStaticProps(context) {
+  const allPosts = getPostSlugs()
+
+  const blogs = allPosts.map(post => ({data: post.data, slug: post.slug}))
+
   // last 3 blogs
-  const latestBlog = data.slice(data.length - 3)
+  // const latestBlog = data.slice(data.length - 3)
   return {
     props: {
-      blogs: latestBlog,
+      blogs: blogs,
     }, // will be passed to the page component as props
   }
 }
