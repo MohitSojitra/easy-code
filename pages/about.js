@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Wrapper from '../components/Header/Wrapper'
+import Wrapper from '../components/Wrapper'
 
 export default function Home() {
   return (

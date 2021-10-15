@@ -59,7 +59,7 @@ function Header() {
 
               <a
                 className="flex items-center mx-2 lg:mx-4 text-gray-800 hover:text-yellow-500 dark:hover:text-yellow-400 dark:text-gray-50"
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/MohitSojitra"
                 rel="noopener noreferrer"
                 target="_blank"
               >
