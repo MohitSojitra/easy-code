@@ -39,6 +39,7 @@ export default function Blog({blog}) {
 export async function getStaticProps({params}) {
   const allPosts = getPostSlugs()
   const blog = allPosts.find(post => post.slug === params.slug)
+  console.log({blog})
   const content = await serialize(blog.content, {
     scope: blog.data,
   })
@@ -51,11 +52,11 @@ export async function getStaticProps({params}) {
 
 export async function getStaticPaths() {
   const allPosts = getPostSlugs()
-
+  // console.log(JSON.stringify(allPosts[0], null, 2))
   const paramas = allPosts.map(post => ({params: {slug: post.slug}}))
-
+  // console.log(paramas)
   return {
     paths: paramas,
-    fallback: true,
+    fallback: false,
   }
 }

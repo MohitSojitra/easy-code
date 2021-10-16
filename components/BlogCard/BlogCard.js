@@ -2,7 +2,7 @@ import {get150Char} from '../../utils/utility.func'
 import Link from 'next/link'
 import UserCard from '../UserCard/UserCard'
 export default function BlogCard({blog}) {
-  console.log({blog})
+  // console.log({blog})
   return (
     <Link href={`/blog/${blog.slug}`}>
       <div className="bg-white cursor-pointer dark:bg-gray-900 shadow-sm  hover:shadow-2xl transition-all duration-500 px-6 pt-4  rounded-lg ">
