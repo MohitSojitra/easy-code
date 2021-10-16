@@ -22,6 +22,10 @@ module.exports = {
               },
               code: {color: theme('colors.yellow.400')},
             },
+            pre: {
+              backgroundColor: theme('colors.yellow.500'),
+              color: theme('colors.gray.900'),
+            },
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
             },
@@ -38,11 +42,18 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.blue.600'),
               },
-              code: {color: theme('colors.blue.400')},
+              code: {
+                color: theme('colors.blue.400'),
+                backgroundColor: theme('colors.yellow.400'),
+              },
             },
             blockquote: {
               borderLeftColor: theme('colors.gray.100'),
               color: theme('colors.gray.300'),
+            },
+            pre: {
+              backgroundColor: theme('colors.yellow.400'),
+              color: theme('colors.gray.900'),
             },
             'h2,h3,h4': {
               color: theme('colors.white'),
