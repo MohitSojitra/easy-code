@@ -23,8 +23,8 @@ module.exports = {
               code: {color: theme('colors.yellow.400')},
             },
             pre: {
-              backgroundColor: theme('colors.yellow.500'),
-              color: theme('colors.gray.900'),
+              backgroundColor: theme('colors.gray.900'),
+              color: theme('colors.gray.50'),
             },
             'h2,h3,h4': {
               'scroll-margin-top': spacing[32],
@@ -52,7 +52,7 @@ module.exports = {
               color: theme('colors.gray.300'),
             },
             pre: {
-              backgroundColor: theme('colors.yellow.400'),
+              backgroundColor: theme('colors.gray.50'),
               color: theme('colors.gray.900'),
             },
             'h2,h3,h4': {
