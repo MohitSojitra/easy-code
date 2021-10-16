@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Wrapper from '../../components/Wrapper'
 import {getPostSlugs} from '../../lib/data'
 import {serialize} from 'next-mdx-remote/serialize'
@@ -46,15 +44,14 @@ export async function getStaticProps({params}) {
   return {
     props: {
       blog: {...blog, content},
-    }, // will be passed to the page component as props
+    },
   }
 }
 
 export async function getStaticPaths() {
   const allPosts = getPostSlugs()
-  // console.log(JSON.stringify(allPosts[0], null, 2))
   const paramas = allPosts.map(post => ({params: {slug: post.slug}}))
-  // console.log(paramas)
+
   return {
     paths: paramas,
     fallback: false,
