@@ -68,19 +68,25 @@ function Header() {
                 </span>
               </a>
 
-              <button className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 hover:text-yellow-500 dark:hover:text-yellow-400 dark:text-gray-50">
+              <a
+                href="https://www.linkedin.com/in/mohit-sojitra"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 dark:text-gray-100 hover:text-yellow-500  dark:hover:text-yellow-400"
+              >
+                {' '}
                 <span className="text-lg">
                   <FaLinkedinIn className="text-xl" />
                 </span>
-              </button>
+              </a>
 
-              <Link href="/about">
+              {/* <Link href="/about">
                 <a className="flex items-center mx-2  lg:mx-4 text-base text-gray-800 hover:text-yellow-500 dark:hover:text-yellow-400 dark:text-gray-50">
                   <span className="text-xl ">
                     <SiAboutdotme className="text-xl" />
                   </span>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

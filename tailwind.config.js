@@ -52,7 +52,7 @@ module.exports = {
               color: theme('colors.gray.300'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.50'),
+              backgroundColor: theme('colors.gray.300'),
               color: theme('colors.gray.900'),
             },
             'h2,h3,h4': {

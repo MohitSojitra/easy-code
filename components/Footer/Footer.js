@@ -21,11 +21,16 @@ export default function Footer() {
             <FaGithub className="text-lg" />
           </span>
         </a>
-        <button className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 dark:text-gray-100 hover:text-yellow-500  dark:hover:text-yellow-400">
+        <a
+          href="https://www.linkedin.com/in/mohit-sojitra"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 dark:text-gray-100 hover:text-yellow-500  dark:hover:text-yellow-400"
+        >
           <span className="text-lg">
             <FaLinkedinIn className="text-xl" />
           </span>
-        </button>
+        </a>
       </div>
     </div>
   )

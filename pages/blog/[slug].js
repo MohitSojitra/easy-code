@@ -37,7 +37,6 @@ export default function Blog({blog}) {
 export async function getStaticProps({params}) {
   const allPosts = getPostSlugs()
   const blog = allPosts.find(post => post.slug === params.slug)
-  console.log({blog})
   const content = await serialize(blog.content, {
     scope: blog.data,
   })
