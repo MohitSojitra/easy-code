@@ -1,4 +1,4 @@
-import {get150Char} from '../../utils/utility.func'
+import {getChar} from '../../utils/utility.func'
 import Link from 'next/link'
 import UserCard from '../UserCard/UserCard'
 export default function BlogCard({blog}) {
@@ -19,7 +19,7 @@ export default function BlogCard({blog}) {
         </div>
         <div>
           <p className="dark:text-gray-50 transition-all duration-500">
-            {get150Char(blog.data.description)}...
+            {getChar(blog.data.description, 150)}...
           </p>
         </div>
 

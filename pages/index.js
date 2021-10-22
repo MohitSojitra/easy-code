@@ -5,6 +5,7 @@ import BlogCard from '../components/BlogCard/BlogCard'
 import Wrapper from '../components/Wrapper'
 import {getPostSlugs} from '../lib/data'
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Home({blogs}) {
   return (
@@ -25,9 +26,11 @@ export default function Home({blogs}) {
         </div>
 
         <div className="my-4 ">
-          <button className="py-3 px-6 bg-yellow-400 hover:bg-yellow-500 font-semibold rounded-lg text-xl flex items-center justify-between">
-            More <AiOutlineArrowRight className="ml-3" size="28px" />
-          </button>
+          <Link href="/blogs">
+            <button className="py-3 px-6 bg-yellow-400 hover:bg-yellow-500 font-semibold rounded-lg text-xl flex items-center justify-between">
+              More <AiOutlineArrowRight className="ml-3" size="28px" />
+            </button>
+          </Link>
         </div>
       </main>
 
