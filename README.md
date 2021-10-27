@@ -13,6 +13,7 @@ My personal Blog website which is build with nextjs, tailwind-css and markdown f
 - **Fully Responsive**
 - **Mark Down Friendly**
 - **SEO friendly**
+- **Light/Dark mode available**
 
 
 ## Getting Started
