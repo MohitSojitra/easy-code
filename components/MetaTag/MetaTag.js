@@ -6,6 +6,7 @@ export default function MetaTag({title, description, siteUrl, previewImage}) {
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
+      <link rel="icon" href="/favicon.ico" />
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />

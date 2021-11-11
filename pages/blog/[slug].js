@@ -3,10 +3,18 @@ import {getPostSlugs} from '../../lib/data'
 import {serialize} from 'next-mdx-remote/serialize'
 import {MDXRemote} from 'next-mdx-remote'
 import UserCard from '../../components/UserCard/UserCard'
+import MetaTag from '../../components/MetaTag/MetaTag'
 
 export default function Blog({blog}) {
+  // console.log({blog})
   return (
     <Wrapper>
+      <MetaTag
+        title={blog.data.title}
+        description={blog.data.description}
+        siteUrl={`https://blog.mohitsojitra.tech/${blog.data.slug}`}
+        previewImage={`https://blog.mohitsojitra.tech/public/${blog.data.slug}/${blog.data.blogImage}`}
+      />
       <main className="w-full flex flex-col  flex-1 items-center pt-28">
         <div className="w-3/5 ">
           {/* Header */}
