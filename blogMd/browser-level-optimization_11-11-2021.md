@@ -10,7 +10,7 @@ description:
 blogImage: optimised.png
 author: Mohit Sojitra
 authorImage: MohitSojitra.jpeg
-slug: react-best-practice_12-10-2021
+slug: browser-level-optimization_11-11-2021
 date: 12-10-2021
 ---
 
