@@ -13,7 +13,7 @@ export default function Blog({blog}) {
         title={blog.data.title}
         description={blog.data.description}
         siteUrl={`https://blog.mohitsojitra.tech/${blog.data.slug}`}
-        previewImage={`https://blog.mohitsojitra.tech/public/blog/${blog.data.slug}/${blog.data.blogImage}`}
+        previewImage={`https://blog.mohitsojitra.tech/blog/${blog.data.slug}/${blog.data.blogImage}`}
       />
       <main className="w-full flex flex-col  flex-1 items-center pt-28">
         <div className="w-3/5 ">
