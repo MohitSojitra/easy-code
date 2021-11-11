@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import Banner from '../components/Banner'
 import BlogCard from '../components/BlogCard/BlogCard'
 import Wrapper from '../components/Wrapper'
@@ -48,7 +48,7 @@ export async function getStaticProps(context) {
   // const latestBlog = data.slice(data.length - 3)
   return {
     props: {
-      blogs: blogs,
+      blogs: blogs.slice(0, 3),
     }, // will be passed to the page component as props
   }
 }
