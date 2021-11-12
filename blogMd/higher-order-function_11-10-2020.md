@@ -55,7 +55,7 @@ Yes we can pass the argument in the function and return square of the parameter
 of the function just like below.
 
 ```js
-function squareIt() {
+function squareIt(n) {
   return n * n
 }
 ```
@@ -95,6 +95,7 @@ function addThreeInEveryItem(arr) {
   for (let i = 0; i < arr.length; i++) {
     result.push(arr[i] + 3)
   }
+  return result
 }
 
 let ans = addThreeInEveryItem([1, 2, 3])
@@ -119,7 +120,7 @@ console.log(ans)
 - You do same thing like below.
 
 ```js
-function doSomethingWithArray(arr) {
+function doSomethingWithArray(arr, fun) {
   let result = []
   for (let i = 0; i < arr.length; i++) {
     result.push(fun(arr[i]))
@@ -135,13 +136,15 @@ function addThreeInEveryItem(input) {
   return input + 3
 }
 
-let ans3 = doSomethingWithArray([1, 2, 3], squareOfTheArray)
-let ans3 = doSomethingWithArray([1, 2, 3], addThreeInEveryItem)
+let ans1 = doSomethingWithArray([1, 2, 3], squareOfTheArray)
+let ans2 = doSomethingWithArray([1, 2, 3], addThreeInEveryItem)
 
-let ans3 = addThreeInEveryItem([1, 2, 3], item => {
+let ans3 = doSomethingWithArray([1, 2, 3], item => {
   return item * 10
 })
-console.log(ans)
+console.log(ans1) // [ 1, 4, 9 ]
+console.log(ans2) // [ 4, 5, 6 ]
+console.log(ans3) // [ 10, 20, 30 ]
 ```
 
 In first situation we clearly see the the difference between theSquareOfTheArray
@@ -155,4 +158,11 @@ function as a argument.
 So What we do here we make a function which is doSomeThingWithArray and pass the
 argument, one is array and another is function definition.
 
+**Example of heighr order function : map , filter, reduce etc. Can you relate
+this scene with this concept ?**
+
 #### Now its time to re read the definition.
+
+<br />
+
+### Thanks for reading! Did I miss anything? Have a question? Send me a direct message on Linkdin, and we'll figure it out :)
