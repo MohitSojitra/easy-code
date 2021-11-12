@@ -18,6 +18,7 @@ export default function Blog({blog}) {
       <main className="w-full flex flex-col  flex-1 items-center pt-28">
         <div className="w-3/5 ">
           {/* Header */}
+
           <div className=" w-full border-b-4 border-yellow-500 dark:border-yellow-400 mb-4">
             <img
               className="object-contain w-full h-72 m-4 rounded-lg"
