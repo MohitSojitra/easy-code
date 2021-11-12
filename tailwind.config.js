@@ -38,14 +38,11 @@ module.exports = {
           css: {
             color: theme('colors.gray.50'),
             a: {
-              color: theme('colors.blue.400'),
+              color: theme('colors.yellow.500'),
               '&:hover': {
-                color: theme('colors.blue.600'),
+                color: theme('colors.yellow.700'),
               },
-              code: {
-                color: theme('colors.blue.400'),
-                backgroundColor: theme('colors.yellow.400'),
-              },
+              code: {color: theme('colors.yellow.400')},
             },
             blockquote: {
               borderLeftColor: theme('colors.gray.100'),
