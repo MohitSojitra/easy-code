@@ -12,7 +12,7 @@ export default function Blog({blog}) {
       <MetaTag
         title={blog.data.title}
         description={blog.data.description}
-        siteUrl={`https://blog.mohitsojitra.tech/${blog.data.slug}`}
+        siteUrl={`https://blog.mohitsojitra.tech/blog/${blog.data.slug}`}
         previewImage={`https://blog.mohitsojitra.tech/blog/${blog.data.slug}/${blog.data.blogImage}`}
       />
       <main className="w-full flex flex-col  flex-1 items-center pt-28">
