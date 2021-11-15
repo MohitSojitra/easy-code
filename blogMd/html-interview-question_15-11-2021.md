@@ -126,6 +126,8 @@ date: 15-11-2021
     "range"
   - Url - Accepts a web address using type = "url”
 
+##### Refrence :- https://www.interviewbit.com/html-interview-questions/
+
 #### Thanks for reading! Did I miss anything? And you want to add more question ? Make a pull request on [easycode repo](https://github.com/MohitSojitra/easy-code) , i love to merge it.
 
 ### Have a question? Send me a direct message on Linkdin, and we'll figure it out:)
