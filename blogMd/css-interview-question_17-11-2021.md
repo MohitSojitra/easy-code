@@ -70,7 +70,7 @@ answers that will help you in an interview.
       ```
   - **ID Selector**
     - ```css
-      h1 {
+      #h {
         color: 'green';
         font-size: 20px;
         line-height: 25px;
@@ -115,13 +115,17 @@ answers that will help you in an interview.
 
 - **8. how are css selector matches ?**
 
-  - `css p span{ color: black; }`
+  - ```css
+    p span {
+      color: black;
+    }
+    ```
   - The selector matching pattern is **RIGHT to LEFT**.
   - That means **first it finds all the span tag** in Dom when it found then it
     goes one step back then it found **p tag**, So in previous out it filter all
     the span tag which parent element is **p tag**.
   - after that, as result apply all the styles over that.
-  - Here **Time complexity is proposed to the selector**
+  - Here **Time complexity is proposed to the number of selector**
 
 - **9. In box-sizing, diffrence between content-box and border-box .**
 
@@ -182,12 +186,27 @@ answers that will help you in an interview.
 
 - **10.What do you min by below selector ?**
 
-  - `div, p {background-color:red}`
+  - ```css
+    div,
+    p {
+      background-color: red;
+    }
+    ```
     - Select all the **DIV and P** tag and apply background color red property.
-  - `div p {background-color:red}`
+  - ```css
+    div p {
+      background-color: red;
+    }
+    ```
+
     - Select all the p tag and then filter out tag which have parent div and
       then apply background style.
-  - `div ~ p {background-color:red}`
+
+  - ```css
+    div ~ p {
+      background-color: red;
+    }
+    ```
 
     - Select all p tag which is after the `</div> ` tag and apply background
       color red.
@@ -207,7 +226,11 @@ answers that will help you in an interview.
 
       ```
 
-  - `div + p {background-color:red}`
+  - ```css
+    div + p {
+      background-color: red;
+    }
+    ```
 
     - Select element P which is directly after the div tag. and aplly background
       color property
@@ -225,7 +248,11 @@ answers that will help you in an interview.
       # output: "This is 3" have background color red.
       ```
 
-  - `div > p {background-color:red}`
+  - ```css
+    div > p {
+      background-color: red;
+    }
+    ```
 
     - Select all p tag which is under the div tag.
     - ```css

@@ -15,7 +15,7 @@ export default function Home({blogs}) {
         title={'Mohit P. Sojitra Blogs '}
         description={'A Full Stack Developer who try to write technical blogs.'}
         siteUrl={'https://blog.mohitsojitra.tech'}
-        previewImage={'https://blog.mohitsojitra.tech/author/MohitSojitra.jpeg'}
+        previewImage={'https://blog.mohitsojitra.tech/home.png'}
       />
       <main className="w-full flex flex-col items-center flex-1">
         <Banner />
