@@ -14,7 +14,13 @@ slug: css-interview-question_17-11-2021
 date: 15-11-2021
 ---
 
-# HTML5/HTML Interview question.
+# Css Interview Questions
+
+As we know Css is the base of any website so in a front-end interview, it is a
+very crucial topic to discuss. In the first view, we thought that it is very
+easy to crack this topic in the interview but it has many questions that make
+the interview very difficult. so in this blog, I'll share some questions and
+answers that will help you in an interview.
 
 - **1. Box model in css, it's very important in frontend interview css
   question.**
