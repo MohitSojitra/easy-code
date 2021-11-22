@@ -70,6 +70,8 @@ answers that will help you in an interview.
     render it first, at that time all the images are a blur, at that time it
     downloads the image when download complete then images shows in browser.
 
+  - [React Lazy Loading Best Video](https://www.youtube.com/watch?v=5ZFK_5V8VpI)
+
   <br/>
 
 - **6 What is the difference between inline, inline-block, and block ?**
