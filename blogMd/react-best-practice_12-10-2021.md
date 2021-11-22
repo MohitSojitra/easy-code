@@ -1,5 +1,5 @@
 ---
-title: 7 React Best Practices You Need to Follow in 2021
+title: 6 React Best Practices You Need to Follow in 2021
 description:
   If you’re a frontend developer engaged in building highly interactive user
   interfaces, you’ve most likely got React in your toolkit. While working on
@@ -47,7 +47,7 @@ function-specific components can vary from organization to organization. After
 all, you can have as many components as you want, and recombine them in any way
 you want to achieve the same end result.
 
-## 🔁 3. Consolidate duplicate code – DRY your code
+## 🔁 2. Consolidate duplicate code – DRY your code
 
 A common rule for all code is to keep it as brief and concise as possible.
 
@@ -76,7 +76,7 @@ return (
 )
 ```
 
-## 📖4. Comment only where necessary
+## 📖3. Comment only where necessary
 
 Attach comments to code only where necessary. This is not only in keeping with
 React best practices, it also serves two purposes at the same time:
@@ -85,7 +85,7 @@ React best practices, it also serves two purposes at the same time:
 - You’ll avoid a potential conflict between comment and code, if you happen to
   alter the code at some later point in time.
 
-## 🐫5. Use capitals for component names
+## 🐫4. Use capitals for component names
 
 If, like most folks, you’re using JSX (a JavaScript extension), the names of the
 components you create need to begin with uppercase letters. For instance, you’ll
@@ -100,7 +100,7 @@ scrapped and capitals became the norm.
 In case JSX is not your language of choice, you can use lowercase letters.
 However, this may reduce the reusability of components beyond your project.
 
-## 📁6. All files related to any one component should be in a single folder
+## 📁5. All files related to any one component should be in a single folder
 
 Keep all files relating to any one component in a single folder, including
 styling files.
@@ -117,7 +117,7 @@ images, tests and any other sub-components relating to Form should all reside in
 the same folder. If you name files sensibly, and keep related files together
 logically, you’ll not have any difficulty finding them later.
 
-## 🔗7. Follow linting rules, break up lines that are too long
+## 🔗6. Follow linting rules, break up lines that are too long
 
 Linting is a process wherein we run a program that analyses code for potential
 errors.
