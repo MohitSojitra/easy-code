@@ -1,7 +1,7 @@
 
 <h2 align="center">
  Blog Website<br/>
-  <a href="https://blog.mohitsojitra.tech/" target="_blank">blog.mohitsojitra.tech</a>
+  <a href="https://easy-code.vercel.app" target="_blank">easy-code.vercel.app</a>
 </h2>
 
 
